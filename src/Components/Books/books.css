@@ -1,0 +1,26 @@
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limita a 2 righe */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 5px solid #e27d5f;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 25px 10px rgba(6, 131, 93, 0.45);
+}
+
+.card-body {
+  background-color: #e27d5f;
+}

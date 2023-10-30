@@ -7,9 +7,10 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#7DC2AD", width: "100%", height: "100%" }}>
+    <div style={{ backgroundColor: "#7DC2AD", width: "100%" }}>
       <MyNavbar />
       <Header />
+      <AllTheBooks />
     </div>
   );
 }
