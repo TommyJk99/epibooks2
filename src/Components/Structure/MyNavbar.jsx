@@ -2,8 +2,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./structure.css";
+import { Form } from "react-bootstrap";
 
-function MyNavbar() {
+function MyNavbar({ setSearchTerm }) {
   return (
     <Navbar expand="lg" className="navbar">
       <Container>
@@ -17,11 +18,17 @@ function MyNavbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto mt-3">
             {/* Più avanti posso creare altri percorsi di route per queste due pagine creando il componente apposito */}
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#link">Browse</Nav.Link>
+            {/* BARRA DI RICERCA */}
+            <Form className="my-form">
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Control type="search" className="shadow-sm my-placeholder" placeholder="scrivi qui!" onChange={(e) => setSearchTerm(e.target.value)} />
+              </Form.Group>
+            </Form>
           </Nav>
         </Navbar.Collapse>
       </Container>

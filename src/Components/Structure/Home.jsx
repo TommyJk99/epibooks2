@@ -10,8 +10,8 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div style={{ backgroundColor: "#7DC2AD", width: "100%" }}>
-      <MyNavbar />
-      <Header setSearchTerm={setSearchTerm} />
+      <MyNavbar setSearchTerm={setSearchTerm} />
+      <Header />
       <AllTheBooks searchTerm={searchTerm} />
       <Footer />
     </div>
