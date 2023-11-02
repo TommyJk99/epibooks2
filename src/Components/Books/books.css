@@ -25,6 +25,10 @@ div .card {
   background-color: #e27d5f;
 }
 
+.custom-link {
+  text-decoration: none;
+}
+
 /* Formattazione link pert scelta tipologia di libro */
 .category-links {
   display: flex;

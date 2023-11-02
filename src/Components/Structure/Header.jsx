@@ -1,6 +1,5 @@
 import React from "react";
 import "./structure.css";
-import Form from "react-bootstrap/Form";
 
 //questa fc contiene il titolo e la barra di ricerca
 //la props setSearchTerm viene dalla Home e serve per aggiornare lo stato alla lettera inserita cosicche...

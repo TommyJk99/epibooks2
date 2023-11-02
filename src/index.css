@@ -12,3 +12,25 @@ html,
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+/* Barra di scorrimento verticale */
+::-webkit-scrollbar {
+  width: 14px; /* Larghezza della barra di scorrimento verticale */
+}
+
+/* Maniglia (o "thumb") della barra di scorrimento */
+::-webkit-scrollbar-thumb {
+  background-color: #e27d5f; /* Colore della maniglia */
+  border-radius: 6px; /* Arrotondamento degli angoli della maniglia */
+}
+
+/* Maniglia della barra di scorrimento al passaggio del mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2c3e50; /* Colore della maniglia al passaggio del mouse */
+}
+
+/* Traccia (o "track") della barra di scorrimento */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Colore di sfondo della traccia */
+  border-radius: 6px; /* Arrotondamento degli angoli della traccia */
+}

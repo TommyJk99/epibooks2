@@ -107,3 +107,8 @@ div .my-placeholder {
 .my-placeholder::placeholder {
   text-align: center;
 }
+
+.footer-container h5,
+span {
+  cursor: pointer;
+}
