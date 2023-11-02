@@ -10,7 +10,7 @@ function App() {
   const [theme, setTheme] = useState("light");
 
   function changeTheme() {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme((lastTheme) => (lastTheme === "light" ? "dark" : "light"));
   }
 
   return (
