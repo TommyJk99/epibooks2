@@ -7,3 +7,10 @@ img {
   display: flex;
   align-items: center;
 }
+
+.background {
+  background-color: #a53860;
+  border-radius: 30% 70% 63% 37% / 30% 30% 70% 70%;
+  border: solid 2px #6b1333;
+  margin-right: 3rem;
+}
